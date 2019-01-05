@@ -1,0 +1,22 @@
+.page-nav {
+  font-size: 14px;
+
+  .per-page {
+
+  }
+  .pagination {
+    width: 230px;
+
+    span {
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    span.selected {
+      border-radius: 15px;
+      box-shadow: 2px 2px 5px 2px #ccc;
+    }
+  }
+}

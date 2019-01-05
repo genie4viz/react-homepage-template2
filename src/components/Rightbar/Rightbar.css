@@ -1,0 +1,31 @@
+.rightbar-container {  
+  width: 70px;  
+  height: 100%;  
+  background: #fbfbfc;
+  font-size: 18px;
+  font-family: Qanelas-SemiBold;
+  line-height: 22px;
+}
+.rightbar-container .alarm {
+  width: 70px;
+  height: 70px;
+  background: #63c55e;
+}
+.rightbar-container .alarm img {
+  height: 60px;
+}
+.rightbar-container .lang {    
+  width: 70px;
+  height: 70px;
+  background: #434752;    
+  color: #fff;
+  text-align: center;
+}
+.rightbar-container .cash {    
+  width: 70px;
+  height: 70px;
+  background: #fbfbfc;
+  color: #434752;
+  text-align: center;
+  border-bottom: solid 1px #ddd;
+}

@@ -1,0 +1,23 @@
+.leftbar-container {
+    width: 270px;    
+}
+
+.bottom-lined {
+    border-bottom : solid 1px rgb(214,214,214);
+}
+.leftbar-container .issue-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;            
+    text-align: left;
+}
+.leftbar-container .issue-item .item-name {
+    font-size: 15px;
+    color:#888;
+}
+.leftbar-container .issue-item .item-value {    
+    font-size: 15px;    
+}
+.text-color-green {
+    color: #63c55e;
+}

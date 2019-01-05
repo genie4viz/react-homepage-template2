@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "location":"Turkey, Antalya",
+        "rooms":"1",
+        "paxs":"2"
+    },{
+        "id":2,
+        "location":"France, Paris",
+        "rooms":"2",
+        "paxs":"2"
+    },{
+        "id":3,
+        "location":"Belgium, Brussels",
+        "rooms":"3",
+        "paxs":"5"
+    },{
+        "id":4,
+        "location":"Germany, Frankfurt",
+        "rooms":"1",
+        "paxs":"3"
+    }
+]

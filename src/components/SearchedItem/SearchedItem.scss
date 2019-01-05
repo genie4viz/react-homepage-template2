@@ -1,0 +1,19 @@
+.searched-item {
+    box-shadow: none;
+    background: #f8f9fa;
+    cursor: pointer;
+}
+.searched-item {
+    img.arrow {        
+        margin-top: -5px;
+        visibility: hidden;
+    }    
+    &:hover {
+        box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.07);
+        background-color: #ffffff;
+        cursor: pointer;
+        img.arrow {
+            visibility: visible;           
+        }
+    }
+}

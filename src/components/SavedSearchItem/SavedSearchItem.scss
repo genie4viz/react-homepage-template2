@@ -1,0 +1,28 @@
+.saved_item {
+  border-bottom: 1px solid #e6e9ec;
+  line-height: 28px;
+  font-size: 14px;
+
+  &:nth-child(1) {
+    border-top: 1px solid #e6e9ec;
+  }
+
+  .search-ico {
+    margin-top: 15px;
+    
+  }
+
+  .moon-ico {
+    height: 14px;
+  }
+
+  .row-ctrl-pnl {
+    color: #63c55e;
+    
+    .del-ico {
+      height: 16px;     
+      margin-right: 4px; 
+    }
+
+  }
+}

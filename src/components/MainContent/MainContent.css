@@ -1,0 +1,7 @@
+.flyout {	
+	display: flex;
+	flex-direction: column;	
+}
+.leftbar-zone {
+	z-index: 100;
+}

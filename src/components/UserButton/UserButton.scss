@@ -1,0 +1,23 @@
+
+.user-button {  
+  border-radius: 0.25rem;    
+  transition: all .15s ease-in;
+  cursor: pointer;
+  background: #333;
+  color: #ffffff; 
+  img {
+    display: block;
+    float:right;
+    margin-left:20px;
+  }
+  &:hover() {
+    background: #999;
+  }
+  &:active {
+    background: #333;
+    color:#fff;
+  }
+  .text {
+    font-size: 14px;
+  }      
+}

@@ -1,0 +1,12 @@
+
+.hotels-container {
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+}
+img.intro {
+    width: 100%;
+    height: auto;
+}
+.card {
+    border-radius: 0;
+}

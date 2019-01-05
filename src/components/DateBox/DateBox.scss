@@ -1,0 +1,46 @@
+.datebox-container {
+    border: solid 1px #ddd;
+    font-size: 14px;
+    height: 52px;
+    .text-color-grey {
+        color: #ddd;
+    }    
+    .text-color-green {
+        color: #63c55e;
+    }
+    .text-color-black {
+        color: #333;
+    }
+    .date-controller {
+        border-radius: 15px;    
+        box-shadow: 2px 2px 5px 2px #ccc;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        text-align: center;
+        margin-left:10px;
+        cursor: pointer;
+    }      
+}
+
+.label-startdate  .DateRangePickerInput_arrow,
+.label-enddate .DateRangePickerInput_arrow {
+  display: none !important;
+}
+.label-startdate .DateRangePickerInput div:nth-child(3) {
+  display: none !important;
+}
+.label-enddate .DateRangePickerInput div:nth-child(1) {
+  display: none !important;
+}
+
+.DateInput_input {
+  color : #63c55e !important;
+  font-size: 12px !important;
+}
+.DateRangePickerInput__withBorder {
+  border: 0px !important;
+}
+.DateInput_input__focused {
+  border-bottom: 0px !important;
+}
