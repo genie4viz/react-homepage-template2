@@ -1,0 +1,20 @@
+.flyout {	
+	display: flex;
+	flex-direction: column;	
+}
+.leftbar-zone {
+	z-index: 100;
+}
+.navitem {	
+	&:hover {
+		transition-duration: 0s;	
+		border-bottom: solid 3px #63c55e;
+	}
+}
+.navbar.scrolling-navbar .navbar-nav > li {
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
+.logo-img {
+	width: 270px;
+}

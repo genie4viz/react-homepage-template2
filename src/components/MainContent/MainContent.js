@@ -15,7 +15,7 @@ import logoImg from '../../static/images/hotelston.png';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Leftbar from '../Leftbar';
 import Routes from "../../Routes";
-import "./MainContent.css";
+import "./MainContent.scss";
 
 class MainContent extends Component {
   constructor(props) {
@@ -44,9 +44,9 @@ class MainContent extends Component {
     return (
       <Router>
         <div className="flyout">
-          <Navbar color="white" expand="md" scrolling className="navbar">
-            <MDBRow >
-              <MDBCol md="4">
+          <Navbar color="white" expand="md" scrolling className="m-0 p-0">
+            <div className="w-100 h-100 m-0 p-0 d-flex">
+              <div className="logo-img d-flex align-items-center mr-2">
                 <NavbarBrand href="/">
                   <img src={logoImg} alt="logo" height="40" />
                   {" "}
@@ -54,32 +54,33 @@ class MainContent extends Component {
                 <NavbarToggler
                   onClick={this.toggleCollapse("mainNavbarCollapse")}
                 />
-              </MDBCol>
-              <MDBCol md="8">
+              </div>
+              <div className="d-flex justify-content-between flex-fill">
                 <Collapse
                   id="mainNavbarCollapse"
                   isOpen={this.state.collapseID}
                   navbar
+                  className="h-100"
                 >
-                  <NavbarNav center="true">
-                    <NavItem>
+                  <NavbarNav className="h-100 m-0 p-0">
+                    <NavItem className="navitem d-flex align-items-center">
                       <NavLink
                         exact
                         to="/"
                         onClick={this.closeCollapse("mainNavbarCollapse")}
                       >
                         Dashboard
-                    </NavLink>
+                      </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className="navitem d-flex align-items-center">
                       <NavLink
                         onClick={this.closeCollapse("mainNavbarCollapse")}
                         to="/hotels"
                       >
                         Hotels
-                    </NavLink>
+                      </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className="navitem d-flex align-items-center">
                       <NavLink
                         onClick={this.closeCollapse("mainNavbarCollapse")}
                         to="/components"
@@ -87,7 +88,7 @@ class MainContent extends Component {
                         Transfers
                     </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className="navitem d-flex align-items-center">
                       <NavLink
                         onClick={this.closeCollapse("mainNavbarCollapse")}
                         to="/advanced"
@@ -95,7 +96,7 @@ class MainContent extends Component {
                         My Bookings
                     </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className="navitem d-flex align-items-center">
                       <NavLink
                         onClick={this.closeCollapse("mainNavbarCollapse")}
                         to="/"
@@ -103,9 +104,7 @@ class MainContent extends Component {
                         My Company
                     </NavLink>
                     </NavItem>
-                  </NavbarNav>
-                  <NavbarNav right>
-                    <NavItem>
+                    <NavItem className="navitem d-flex align-items-center">
                       <NavLink
                         onClick={this.closeCollapse("mainNavbarCollapse")}
                         to="/"
@@ -113,7 +112,7 @@ class MainContent extends Component {
                         News
                     </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className="navitem d-flex align-items-center">
                       <NavLink
                         onClick={this.closeCollapse("mainNavbarCollapse")}
                         to="/"
@@ -121,7 +120,7 @@ class MainContent extends Component {
                         Help
                     </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className="navitem d-flex align-items-center">
                       <NavLink
                         onClick={this.closeCollapse("mainNavbarCollapse")}
                         to="/"
@@ -131,8 +130,8 @@ class MainContent extends Component {
                     </NavItem>
                   </NavbarNav>
                 </Collapse>
-              </MDBCol>
-            </MDBRow>
+              </div>
+            </div>
           </Navbar >
           {this.state.collapseID && overlay}
           <main className="d-flex flex-row">
