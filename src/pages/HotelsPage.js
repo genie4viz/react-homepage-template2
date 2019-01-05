@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import SearchBox from '../components/SearchBox';
 import imgIntro from '../static/images/intro.png';
 import '../pages/HotelsPage.css';
 import SavedSearchBoxContainer from '../containers/SavedSearchBoxContainer';
+import SearchBoxContainer from '../containers/SearchBoxContainer';
 
 class HotelsPage extends Component {
     render() {
@@ -11,7 +11,7 @@ class HotelsPage extends Component {
                 <div className="d-flex justify-content-center">
                     <img src={imgIntro} className="img-fluid intro" alt="" />
                 </div>
-                <SearchBox />
+                <SearchBoxContainer />
                 <SavedSearchBoxContainer />
             </div>
         );
